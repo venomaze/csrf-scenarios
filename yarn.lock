@@ -506,6 +506,11 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
+csrf-guard@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/csrf-guard/-/csrf-guard-0.1.0.tgz#1e76c26aebbed3f494a8a113d0494b71ae8f64cd"
+  integrity sha512-jh7tSvuJTrzPVy1ZH4B43uOUhaTR5AknBC8cST3Ofc8ar2NkxtMnWHHEftgnpKaHLq2lmg5Tc1GsXHuVUMZI9w==
+
 debug@2.6.9, debug@^2.2.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
