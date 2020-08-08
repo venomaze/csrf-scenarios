@@ -1,3 +1,3 @@
 # CSRF Scenarios
 
-Multiple scenarios for CSRF attack.
+💣 Multiple scenarios for CSRF attack.
