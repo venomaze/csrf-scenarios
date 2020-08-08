@@ -12,10 +12,7 @@ const app = express();
 const IP = ip.address();
 const PORT = 3000;
 
-const admin = {
-  email: 'admin@nosecurity.com',
-  active: true,
-};
+const admin = { active: true };
 
 app.use(
   session({
