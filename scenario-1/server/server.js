@@ -14,6 +14,7 @@ const PORT = 3000;
 
 const admin = {
   email: 'admin@nosecurity.com',
+  active: true,
 };
 
 app.use(

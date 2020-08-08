@@ -10,21 +10,13 @@ router.get('/', (req, res) => {
   });
 });
 
-router.get('/form', (req, res) => {
+router.get('/delete', (req, res) => {
   const admin = req.app.get('admin');
 
-  res.render('form', {
-    email: admin.email,
-  });
-});
+  admin.active = false;
+  delete req.session.admin;
 
-router.get('/change', (req, res) => {
-  const admin = req.app.get('admin');
-  const newEmail = req.query.email;
-
-  admin.email = newEmail;
-
-  res.redirect('/admin');
+  res.redirect('/');
 });
 
 router.get('/logout', (req, res) => {

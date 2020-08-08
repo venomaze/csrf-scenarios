@@ -1,13 +1,14 @@
 const express = require('express');
 const path = require('path');
+const ip = require('ip');
 
 const app = express();
 const PORT = 3001;
+const IP = ip.address();
+const target = `http://${IP}:3000`;
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
-const target = 'http://192.168.152.1:3000';
 
 app.get('/', (req, res) => {
   res.render('home', {
@@ -16,5 +17,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Attacker running on port ${PORT}`);
+  console.log(`Attacker running on http://${IP}:${PORT}`);
 });
