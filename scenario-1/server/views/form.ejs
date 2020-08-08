@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change email</title>
+  </head>
+  <body>
+    <h1>Change email</h1>
+    <p>Change your email here:</p>
+    <form action="/admin/change" method="GET">
+      <input type="email" name="email" value="<%= email %> " />
+      <input type="submit" value="Change" />
+    </form>
+  </body>
+</html>
