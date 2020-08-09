@@ -9,13 +9,14 @@ fetch('/admin')
 
     const input = document.querySelector('input[name="csrf_token"]');
     const token = input.value;
+    const reqBody = `csrf_token=${token}`;
 
     fetch('/admin/delete', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: `csrf_token=${token}`,
+      body: reqBody,
     })
       .then(() => console.log('Deleted the account!'))
       .catch(err => console.error(err));
