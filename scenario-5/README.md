@@ -1,4 +1,4 @@
-# Scenario 2
+# Scenario 5
 
 - No Anti-CSRF Token protection
 - GET requests **don't** have side effects
