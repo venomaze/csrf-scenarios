@@ -4,3 +4,4 @@
 - GET requests **don't** have side effects
 - Lax SameSite flag for cookies (default)
 - Not vulnerable
+- 😄 Best scenario
