@@ -11,14 +11,13 @@ fetch('/admin')
     const token = input.value;
     const reqBody = `csrf_token=${token}`;
 
-    fetch('/admin/delete', {
+    return fetch('/admin/delete', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: reqBody,
-    })
-      .then(() => console.log('Deleted the account!'))
-      .catch(err => console.error(err));
+    });
   })
+  .then(() => console.log('Deleted the account!'))
   .catch(err => console.error(err));
