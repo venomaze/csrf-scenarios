@@ -18,7 +18,7 @@
    - **Protected** by Anti-CSRF Token.
    - GET requests **don't** have side effects.
    - SameSite: Lax.
-   - Not vulnerable to CSRF.
+   - **Not vulnerable** to CSRF.
 1. Scenario number 4:
    - No Anti-CSRF Token protection.
    - GET requests **have** side effects.
