@@ -13,7 +13,7 @@
    - No Anti-CSRF Token protection.
    - GET requests **don't** have side effects.
    - SameSite: Lax.
-   - **Not vulnerable**: Only when the browser supports SameSite flag.
+   - **Not vulnerable** unless the browser doesn't support SameSite flag.
 1. Scenario number 3:
    - **Protected** by Anti-CSRF Token.
    - GET requests **don't** have side effects.

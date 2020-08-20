@@ -5,4 +5,4 @@
 - Lax SameSite flag for cookies (default)
 - Vulnerable to XSS
 - Completely vulnerable
-- ☹️ Bad scenario
+- Bad scenario
