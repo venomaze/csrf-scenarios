@@ -15,7 +15,7 @@
    - SameSite: Lax.
    - Not vulnerable **if the browser supports SameSite flag**.
 1. Scenario number 3:
-   - Protected by Anti-CSRF Token.
+   - **Protected** by Anti-CSRF Token.
    - GET requests **don't** have side effects.
    - SameSite: Lax.
    - Not vulnerable to CSRF.
@@ -36,7 +36,7 @@
    - Vulnerable to **XSS**.
    - Completely **vulnerable**.
 1. Scenario number 7:
-   - Protected by Anti-CSRF Token.
+   - **Protected** by Anti-CSRF Token.
    - GET requests **don't** have side effects.
    - SameSite: Lax.
    - Vulnerable to **XSS**.
